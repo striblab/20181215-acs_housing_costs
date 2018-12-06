@@ -61,44 +61,27 @@ utils.environmentNoting();
 'use strict';
 
 // Dependencies
-import utilsFn from './utils.js';
-import * as d3 from 'd3';
-import * as c3 from 'c3';
-import Map from './chart.js';
+import Chart from './chart.js';
 
-const map = new Map('#chartCounts');
-const chart1 = new Map('#chartNP');
-const chart2 = new Map('#chartRate');
+const chart = new Chart('#chart');
 
-// Import local ES6 modules like this:
-//import utilsFn from './utils.js';
+// $.urlParam = function(name) {
+//     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+//     if (results != null) {
+//         return results[1] || 0;
+//     } else {
+//         return null;
+//     }
+// }
 
-// Or import libraries installed with npm like this:
-// import module from 'module';
+// var selected = $.urlParam('chart');
 
-// Setup utils function
-utilsFn({});
+// if (selected != null) {
+//     $(".slide").hide();
+//     $("#" + selected).show();
+// }
+// if (selected == "all") {
+//     $(".slide").show();
+// }
 
-$.urlParam = function(name) {
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    if (results != null) {
-        return results[1] || 0;
-    } else {
-        return null;
-    }
-}
-
-var selected = $.urlParam('chart');
-
-if (selected != null) {
-    $(".slide").hide();
-    $("#" + selected).show();
-}
-if (selected == "all") {
-    $(".slide").show();
-}
-
-
-map.render();
-chart1.render();
-chart2.render();
+chart.render();

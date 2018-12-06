@@ -1,13 +1,10 @@
 import 'intersection-observer';
 import scrollama from "scrollama";
 import * as d3 from 'd3';
-import * as c3 from 'c3';
-import Map from './chart.js';
+import Chart from './chart.js';
 
 // Doing these as constants for now because confusing ES6 "this" scoping + laziness
-const map = new Map('#chartCounts');
-const chart1 = new Map('#chartNP');
-const chart2 = new Map('#chartRate');
+const chart1 = new Chart('#chart');
 const scroller = scrollama();
 
 // Other various ScrollyGraphic components
@@ -115,9 +112,7 @@ class ScrollyGraphic {
   }
 
   init() {
-    map.render();
     chart1.render();
-    chart2.render();
 
     // 1. call a resize on load to update width/height/position of elements
     this._handleResize();
