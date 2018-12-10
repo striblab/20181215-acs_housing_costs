@@ -129,12 +129,12 @@ class Chart {
             axis: {
                 x: {
                     // label: 'Sepal.Width',
-                    show: false,
+                    show: true,
 
                     tick: {
                         fit: false
                     },
-                    height: 60
+                    // height: 60
                 },
                 y: {
                     max: 160,
