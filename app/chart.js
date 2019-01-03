@@ -30,7 +30,6 @@ class Chart {
 
     }
 
-
     do_step2() {
         var self = this;
         self.chartCounts.load({
@@ -47,7 +46,6 @@ class Chart {
             unload: ['GOP']
         });
     }
-
 
     do_step3() {
         var self = this;

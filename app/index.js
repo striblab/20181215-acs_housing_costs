@@ -60,6 +60,13 @@ utils.environmentNoting();
 // /* global _ */
 'use strict';
 
+// import ScrollyGraphic from './scroller.js';
+
+// (function(){
+//     let s = new ScrollyGraphic();
+//     s.init();
+// })();
+
 // Dependencies
 import Chart from './chart.js';
 
