@@ -10,7 +10,6 @@ const scroller = scrollama();
 // Other various ScrollyGraphic components
 const container = d3.select('#scroll');
 const graphic = container.select('.scroll__graphic');
-const chart = graphic.select('.chart');
 const text = container.select('.scroll__text');
 const step = text.selectAll('.step');
 
@@ -57,40 +56,40 @@ class ScrollyGraphic {
     })
 
     if (response.index == 0 && response.direction == 'up' ) {
-      map.undo_step1();
+      chart1.undo_step1();
     }
 
     // First transition (highlight competitive states)
     if (response.index == 1 ) {
       if (response.direction == 'down') {
-        map.do_step1();
+        chart1.do_step1();
       } else {
-        map.undo_step2();
+        chart1.undo_step2();
       }
     }
 
     // Second transition (highlight CA and MN)
     if (response.index == 3 ) {
       if (response.direction == 'down') {
-        map.do_step2();
+        chart1.do_step2();
       } else {
-        map.undo_step3();
+        chart1.undo_step3();
       }
     }
 
     // Third transition (highlight D districts)
     if (response.index == 5 ) {
       if (response.direction == 'down') {
-        map.do_step3();
+        chart1.do_step3();
       } else {
-        map.undo_step4();
+        chart1.undo_step4();
       }
     }
 
     // Final transition (highlight R districts)
     if (response.index == 7 ) {
       if (response.direction == 'down') {
-        map.do_step4();
+        chart1.do_step4();
       }
     }
   }
