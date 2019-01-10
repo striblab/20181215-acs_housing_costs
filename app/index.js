@@ -68,9 +68,9 @@ utils.environmentNoting();
 // })();
 
 // Dependencies
-import Chart from './chart.js';
+// import Chart from './chart.js';
 
-const chart = new Chart('#chart');
+// const chart = new Chart('#chart');
 
 // $.urlParam = function(name) {
 //     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -91,4 +91,11 @@ const chart = new Chart('#chart');
 //     $(".slide").show();
 // }
 
-chart.render();
+// chart.render();
+
+import ScrollyGraphic from './scroller.js';
+
+(function(){
+    let s = new ScrollyGraphic();
+    s.init();
+})();
