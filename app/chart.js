@@ -131,10 +131,13 @@ class Chart {
                 ],
                 type: 'scatter',
                 colors: {
-                    'DaysMarket15': '#857AAA',
-                    'DaysMarket16': '#271D42',
-                    'DaysMarket17': '#299e3d'
+                    'DaysMarket15': '#C22A22',
+                    'DaysMarket16': '#3580A3',
+                    'DaysMarket17': '#299E3D'
                 },
+            },
+            transition: {
+                duration: 400
             },
             legend: {
                 show: false
