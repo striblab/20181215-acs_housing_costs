@@ -17,6 +17,16 @@
   position: relative;
 }
 
+.slide {
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.chart {
+  height:450px;
+}
+
 .scroll__graphic {
   position: absolute;
   top: 0;
@@ -348,3 +358,12 @@ div .byline a {
     fill: #000;
     /*  font-size: 28px !important;*/
   }
+
+
+  @media (max-width:800px) {
+    .slide, .container-lg, #wrapper, #map {
+        width:100% !important;
+        max-width:100% !important;
+        min-width:100% !important;
+   }
+}

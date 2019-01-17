@@ -104,7 +104,7 @@ class Chart {
 
         var padding = {
             top: 40,
-            right: 20,
+            right: 60,
             bottom: 30,
             left: 60,
         };
