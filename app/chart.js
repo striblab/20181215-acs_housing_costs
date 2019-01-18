@@ -147,6 +147,14 @@ class Chart {
             },
             axis: {
                 x: {
+                    max: 120,
+                    min: 0,
+                    padding: {
+                        bottom: 0,
+                        top: 0,
+                        right: 0,
+                        left: 0
+                    },
                     // label: 'Sepal.Width',
                     show: true,
 
