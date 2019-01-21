@@ -27,6 +27,124 @@
   height:450px;
 }
 
+.legendary {
+  padding: 4px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0 7px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+	/*RED SHADED RAMP*/
+	.red1 {
+		fill: #F2AC93;
+		background-color: #F2AC93;
+	}
+	.red2 {
+		fill: #F28670;
+		background-color: #F28670;
+	}
+	.red3 {
+		fill: #F2614C;
+		background-color: #F2614C;
+	}
+	.red4 {
+		fill: #C22A22;
+		background-color: #C22A22;
+	}
+	.red5 {
+		fill: #9C0004;
+		background-color: #9C0004;
+	}
+	/*ORANGE SHADED RAMP*/
+	.orange1 {
+		fill: #F2D2A4;
+		background-color: #F2D2A4;
+	}
+	.orange2 {
+		fill: #F2AF80;
+		background-color: #F2AF80;
+	}
+	.orange3 {
+		fill: #E07242;
+		background-color: #E07242;
+	}
+	.orange4 {
+		fill: #C2421F;
+		background-color: #C2421F;
+	}
+	.orange5 {
+		fill: #822010;
+		background-color: #822010;
+	}
+	/*BLUE SHADED RAMP*/
+	.blue1 {
+		fill: #D1E6E1;
+		background-color: #D1E6E1;
+	}
+	.blue2 {
+		fill: #A7E6E3;
+		background-color: #A7E6E3;
+	}
+	.blue3 {
+		fill: #67B4C2;
+		background-color: #67B4C2;
+	}
+	.blue4 {
+		fill: #3580A3;
+		background-color: #3580A3;
+	}
+	.blue5 {
+		fill: #0D4673;
+		background-color: #0D4673;
+	}
+	/*GREEN SHADED RAMP*/
+	.green1 {
+		fill: #C7E5B5;
+		background-color: #C7E5B5;
+	}
+	.green2 {
+		fill: #9EE384;
+		background-color: #9EE384;
+	}
+	.green3 {
+		fill: #5BBF48;
+		background-color: #5BBF48;
+	}
+	.green4 {
+		fill: #299E3D;
+		background-color: #299E3D;
+	}
+	.green5 {
+		fill: #118241;
+		background-color: #118241;
+	}
+	/*GREY SHADED RAMP*/
+	.gray1 {
+		fill: #ddd;
+		background-color: #ddd;
+	}
+	.gray2 {
+		fill: #CCC;
+		background-color: #CCC;
+	}
+	.gray3 {
+		fill: #969696;
+		background-color: #969696;
+	}
+	.gray4 {
+		fill: #636363;
+		background-color: #636363;
+		color: #fff;
+	}
+	.gray5 {
+		fill: #333333;
+		background-color: #333333;
+		color: #fff;
+	}
+
 .scroll__graphic {
   position: absolute;
   top: 0;
