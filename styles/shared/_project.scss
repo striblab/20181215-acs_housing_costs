@@ -195,13 +195,12 @@
 }
 
 .step p {
-  font-family:'Benton Sans';
-  font-size:0.9em;
-  position:relative;
-  background-color:#f7f7f7;
-  border:2px solid #80817c;
-  padding:20px 20px 20px 20px;
-  max-width:525px;
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 
  .elex-header {
@@ -509,5 +508,18 @@ div .byline a {
     padding-top:200px;
     margin-left:auto;
     margin-right:auto;
+  }
+
+}
+
+@media (max-width:520px) {
+  .step p {
+    border-top: 1px solid #333;
+    background-color:#ffffff;
+    opacity:0.8;
+  }
+  .step p:last-child {
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
   }
 }
