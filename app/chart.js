@@ -25,11 +25,10 @@ class Chart {
     }
 
     undo_step1() {
-        // var self = this;
-        // self.chartCounts.load({
-        //     unload: ['DaysMarket15']
-        // });
-
+        var self = this;
+        self.chartCounts.load({
+            unload: ['DaysMarket15']
+        });
     }
 
     do_step2() {
@@ -48,10 +47,8 @@ class Chart {
     }
 
     undo_step2() {
-        // var self = this;
-        // self.chartCounts.load({
-        //     unload: ['DaysMarket16']
-        // });
+        var self = this;
+        self.do_step1();
     }
 
     do_step3() {
@@ -70,10 +67,8 @@ class Chart {
     }
 
     undo_step3() {
-        // var self = this;
-        // self.chartCounts.load({
-        //     unload: ['DaysMarket17']
-        // });
+        var self = this;
+        self.do_step2();
     }
 
     do_step4() {
@@ -93,9 +88,11 @@ class Chart {
 
     undo_step4() {
         var self = this;
-        self.chartCounts.load({
-            unload: ['DaysMarket17']
-        });
+        self.do_step3();
+        // var self = this;
+        // self.chartCounts.load({
+        //     unload: ['DaysMarket17']
+        // });
     }
 
 
