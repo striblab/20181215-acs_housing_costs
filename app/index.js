@@ -139,7 +139,7 @@ map.on('load', function() {
            'fill-antialias' : true,
            'fill-opacity': 0.7,
            'fill-color': '#3580A3',
-           'fill-outline-color': '#3580A3'
+           'fill-outline-color': '#555555'
      },
      'filter': ['==', 'renter_cos', 0]
    }, 'road-primary');
@@ -154,7 +154,7 @@ map.on('load', function() {
         'fill-antialias' : true,
         'fill-opacity': 0.7,
         'fill-color': '#C2421F',
-        'fill-outline-color': '#0D4673'
+        'fill-outline-color': '#555555'
   },
   'filter': ['==', 'renter_cos', 1]
 }, 'road-primary');
@@ -169,7 +169,7 @@ map.addLayer({
         'fill-antialias' : true,
         'fill-opacity': 0.7,
         'fill-color': '#DDDDDD',
-        'fill-outline-color': '#DDDDDD'
+        'fill-outline-color': '#555555'
   },
   'filter': ['==', 'renter_cos', 2]
 }, 'road-primary');
