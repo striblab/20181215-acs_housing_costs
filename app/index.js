@@ -60,38 +60,6 @@ utils.environmentNoting();
 // /* global _ */
 'use strict';
 
-// import ScrollyGraphic from './scroller.js';
-
-// (function(){
-//     let s = new ScrollyGraphic();
-//     s.init();
-// })();
-
-// Dependencies
-// import Chart from './chart.js';
-
-// const chart = new Chart('#chart');
-
-// $.urlParam = function(name) {
-//     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-//     if (results != null) {
-//         return results[1] || 0;
-//     } else {
-//         return null;
-//     }
-// }
-
-// var selected = $.urlParam('chart');
-
-// if (selected != null) {
-//     $(".slide").hide();
-//     $("#" + selected).show();
-// }
-// if (selected == "all") {
-//     $(".slide").show();
-// }
-
-// chart.render();
 
 import Chart from './chart.js';
 import Chart2 from './barchart.js';
@@ -141,7 +109,7 @@ map.on('load', function() {
            'fill-color': '#3580A3',
            'fill-outline-color': '#555555'
      },
-     'filter': ['==', 'renter_cos', 0]
+     'filter': ['==', 'renter_c_1', 0]
    }, 'road-primary');
 
    map.addLayer({
@@ -153,10 +121,10 @@ map.on('load', function() {
          'paint': {
         'fill-antialias' : true,
         'fill-opacity': 0.7,
-        'fill-color': '#C2421F',
+        'fill-color': '#E07242',
         'fill-outline-color': '#555555'
   },
-  'filter': ['==', 'renter_cos', 1]
+  'filter': ['==', 'renter_c_1', 1]
 }, 'road-primary');
 
 map.addLayer({
@@ -171,7 +139,7 @@ map.addLayer({
         'fill-color': '#DDDDDD',
         'fill-outline-color': '#555555'
   },
-  'filter': ['==', 'renter_cos', 2]
+  'filter': ['==', 'renter_c_1', 2]
 }, 'road-primary');
 
 });

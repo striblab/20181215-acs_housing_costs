@@ -23,12 +23,14 @@ class BarChart {
             padding: padding,
             data: {
                 columns: [
-                    ['Source', 0.294405998,0.399077278,0.243656286,0.062860438]
+                    ['2017', 0.838741516,0.818120042,0.496946133,0.201340241,0.025271725],
+                    ['2012', 0.857669542,0.760120158,0.354896754,0.11828762,0.029369059]
                 ],
                 type: 'bar',
                 labels: {
                     format: {
-                        'Source': d3.format('.0%')
+                        '2017': d3.format('.0%'),
+                        '2012': d3.format('.0%')
                     }
                 },
                 line: {
@@ -52,7 +54,7 @@ class BarChart {
                 }
             },
             color: {
-                pattern: ['#BF603C']
+                pattern: ['#E07242','#3580A3']
             },
             axis: {
                 rotated: true,
@@ -75,7 +77,7 @@ class BarChart {
                         left: 0
                     },
                     type: 'category',
-                    categories: ['False/Canceled','Clear on Arrival','Shooting Incident','Unknown'],
+                    categories: ['<$20,000','$20,000-$34,000','$35,000-$49,000','$50,000-$74,999','$75,000+'],
                     tick: {
                         multiline: false
                     }
@@ -86,12 +88,12 @@ class BarChart {
                     show: false
                 },
                 y: {
-                    lines: [{
-                        value: 0.5,
-                        text: '',
-                        position: 'start',
-                        class: 'powerline'
-                    }]
+                    // lines: [{
+                    //     value: 0.5,
+                    //     text: '',
+                    //     position: 'start',
+                    //     class: 'powerline'
+                    // }]
 
                 }
             },
@@ -103,7 +105,12 @@ class BarChart {
             }
         });
 
+        d3.selectAll(".c3-target-2012")
+        .selectAll(".c3-bar, .c3-texts")
+        .attr("transform", "translate(0, 5)");
+
     }
+
 }
 
 export {

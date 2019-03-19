@@ -26,6 +26,11 @@
 .chart {
   height:450px;
   clear:both;
+  pointer-events:none !important;
+}
+
+.chart .overlay {
+  pointer-events:none !important;
 }
 
 .legendary {
