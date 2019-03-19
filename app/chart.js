@@ -70,6 +70,7 @@ class Chart {
                     min: 0,
                     tick: {
                         format: d3.format(".0%"),
+                        values: [0,0.10,0.20,0.30,0.40,0.50,0.60],
                         fit: false
                     },
                     padding: {
