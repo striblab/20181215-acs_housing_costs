@@ -33,6 +33,10 @@
   pointer-events:none !important;
 }
 
+.chatter {
+  font-size:0.8em;
+}
+
 .legendary {
   padding: 4px;
   color: #fff;
@@ -45,10 +49,23 @@
 
   
 #map {
-  height:700px;
+  height:500px;
   width:100%;
   margin-left:auto;
   margin-right:auto;
+}
+
+.triptych {
+  width:31.5%;
+  margin:5px;
+  display:inline-block;
+  margin-top:15px;
+}
+
+.triptych .map {
+  height:300px;
+  width:100%;
+  pointer-events:none !important;
 }
 
 .mapboxgl-ctrl-compass {
@@ -508,6 +525,11 @@ div .byline a {
         width:100% !important;
         max-width:100% !important;
         min-width:100% !important;
+   }
+   .triptych { 
+     width:100%;
+     margin:0;
+     margin-top:15px;
    }
    .scroll__graphic.is-fixed {
     position: fixed;

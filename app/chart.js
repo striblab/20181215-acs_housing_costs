@@ -80,7 +80,7 @@ class Chart {
                         left: 0
                     },
                     label: {
-                        text: '% of income spent on rent',
+                        text: '% of income spent on rental costs',
                         position: 'outer-center'
                     },
                     show: true,

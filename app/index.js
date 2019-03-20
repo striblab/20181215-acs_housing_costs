@@ -74,18 +74,56 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LF
 
 var dzoom = 8;
 var mzoom = 8;
-var centerpoint = [-93.29089, 45.01476];
+
+var centerpoint = [-93.264313, 44.973269];
 
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
-    center: [-93.264313, 44.973269], 
-    // center: [-93.29089, 45.01476], 
+    center: centerpoint, 
     zoom: dzoom,
     minZoom: mzoom
 });
 
-map.addControl(new mapboxgl.NavigationControl());
+//north minneapolis suburbs
+var centerpoint1 = [-93.350517, 45.119514];
+
+var map1 = new mapboxgl.Map({
+  container: 'map1', // container id
+  style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
+  center: centerpoint1, 
+  zoom: 9,
+  minZoom: 9
+});
+
+//central minneapolis
+var centerpoint2 = [-93.259557, 44.955509];
+
+var map2 = new mapboxgl.Map({
+  container: 'map2', // container id
+  style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
+  center: centerpoint2, 
+  zoom: 10,
+  minZoom: 10
+});
+
+//east st. paul
+var centerpoint3 = [-92.995337, 44.953335];
+
+var map3 = new mapboxgl.Map({
+  container: 'map3', // container id
+  style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
+  center: centerpoint3, 
+  zoom: 9,
+  minZoom: 9
+});
+
+function genMap(map,nav,centerpoint) {
+
+if (nav) {
+  map.addControl(new mapboxgl.NavigationControl());
+}
+
 map.scrollZoom.disable();
 map.doubleClickZoom.disable();
 
@@ -147,30 +185,31 @@ map.addLayer({
 $(document).ready(function() {
   if ($("#wrapper").width() < 600) {
       map.flyTo({
-        center: [-93.264313, 44.973269], 
+        center: centerpoint, 
         zoom: mzoom,
         minZoom: mzoom
       });
-  } else {
-      map.flyTo({
-        center: [-93.264313, 44.973269],  
-        zoom: dzoom,
-        minZoom: mzoom
-      });
-  }
+  } 
   $(window).resize(function() {
       if ($("#wrapper").width() < 600) {
           map.flyTo({
-            center: [-93.264313, 44.973269],  
+            center: centerpoint,  
             zoom: mzoom,
             minZoom: mzoom
           });
       } else {
           map.flyTo({
-            center: [-93.264313, 44.973269],  
+            center: centerpoint,  
             zoom: dzoom,
             minZoom: mzoom
           });
       }
   });
 });
+
+}
+
+genMap(map,true,centerpoint);
+genMap(map1,false,centerpoint1);
+genMap(map2,false,centerpoint2);
+genMap(map3,false,centerpoint3);
