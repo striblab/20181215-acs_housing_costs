@@ -34,7 +34,7 @@ class Chart {
                 ],
                 type: 'scatter',
                 colors: {
-                    'hhincome_n': '#3580A3',
+                    'hhincome_n': '#857AAA',
                     'hhincome_y': '#E07242'
                 }
             },

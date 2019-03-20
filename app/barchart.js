@@ -54,7 +54,7 @@ class BarChart {
                 }
             },
             color: {
-                pattern: ['#E07242','#3580A3']
+                pattern: ['#E07242','#857AAA']
             },
             axis: {
                 rotated: true,

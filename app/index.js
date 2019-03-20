@@ -144,7 +144,7 @@ map.on('load', function() {
             'paint': {
            'fill-antialias' : true,
            'fill-opacity': 0.7,
-           'fill-color': '#3580A3',
+           'fill-color': '#857AAA',
            'fill-outline-color': '#555555'
      },
      'filter': ['==', 'renter_c_1', 0]
