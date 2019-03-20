@@ -15,7 +15,7 @@ class BarChart {
             top: 20,
             right: 40,
             bottom: 20,
-            left: 120,
+            left: 150,
         };
 
         self.chartCounts = c3.generate({
@@ -65,6 +65,10 @@ class BarChart {
                         bottom: 0,
                         top: 0
                     },
+                    label: {
+                        text: '% of renter population who are cost burdened',
+                        position: 'outer-center'
+                    },
                     tick: {
                         count: 4,
                         values: [0, 0.25, 0.50, 0.75, 1],
@@ -75,6 +79,10 @@ class BarChart {
                     padding: {
                         right: 0,
                         left: 0
+                    },
+                    label: {
+                        text: 'Household income bracket',
+                        position: 'outer-center'
                     },
                     type: 'category',
                     categories: ['<$20,000','$20,000-$34,000','$35,000-$49,000','$50,000-$74,999','$75,000+'],
