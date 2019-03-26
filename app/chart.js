@@ -62,6 +62,32 @@ class Chart {
                         class: 'powerline'
                     }]
 
+                },
+                y: {
+                    lines: [{
+                        value: 40000,
+                        text: '',
+                        position: 'start',
+                        class: 'powerline'
+                    },
+                    {
+                            value: 80000,
+                            text: '',
+                            position: 'start',
+                            class: 'powerline'
+                    },
+                    {
+                            value: 120000,
+                            text: '',
+                            position: 'start',
+                            class: 'powerline'
+                    },
+                    {
+                            value: 160000,
+                            text: '',
+                            position: 'start',
+                            class: 'powerline'
+                    }]
                 }
             },
             axis: {

@@ -14,8 +14,8 @@
       
       {
         "id": "index",
-        "articleId": "NEEDS-ARTICLE-ID",
-        "lcd": "NEEDS-LCD-ID",
+        "articleId": "506438161",
+        "lcd": "506438211",
         "default": true
       }
       
@@ -32,7 +32,6 @@
       "https://cdn.polyfill.io/v2/polyfill.min.js",
       "https://static.startribune.com/assets/libs/pym.js/1.3.2/pym.v1.min.js",
       "https://static.startribune.com/assets/libs/lodash/4.17.4/lodash.min.js",
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
       "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
       "https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"
     ]
