@@ -63,6 +63,7 @@ utils.environmentNoting();
 
 import Chart from './chart.js';
 import Chart2 from './barchart.js';
+import burden from '../sources/burdened.json';
 
 const chart1 = new Chart('#chart');
 const chart2 = new Chart2('#bars');
@@ -132,7 +133,7 @@ map.on('load', function() {
 
  map.addSource('metro', {
    type: 'geojson',
-   data: './shapefiles/burdened.json'
+   data: burden
  });
 
   map.addLayer({

@@ -66,7 +66,7 @@ class BarChart {
                         top: 0
                     },
                     label: {
-                        text: '% of renter population who were cost-burdened',
+                        text: '% of renter households who were cost-burdened',
                         position: 'outer-center'
                     },
                     tick: {
