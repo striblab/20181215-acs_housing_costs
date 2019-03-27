@@ -37,7 +37,7 @@
 }
 
 .inset img {
-  
+  width:100%;
 }
 
 .inset .credit {
@@ -85,6 +85,7 @@
   margin:5px;
   display:inline-block;
   margin-top:15px;
+  vertical-align: top;
 }
 
 .maplabel {
@@ -562,7 +563,7 @@ div .byline a {
 
 
   @media (max-width:800px) {
-    .slide, .container-lg, #wrapper, #map {
+    .slide, .container-lg, #wrapper, #map, .inset {
         width:100% !important;
         max-width:100% !important;
         min-width:100% !important;
