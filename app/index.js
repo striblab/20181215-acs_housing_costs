@@ -215,7 +215,7 @@ map.addLayer({
   'type': 'line',
     'paint': {
       'line-color': 'rgba(0,0,0,1)',
-      'line-width': 1.2
+      'line-width': 1.5
     }
 }, 'place-town');
 } else {
@@ -228,7 +228,7 @@ map.addLayer({
     'type': 'line',
     'paint': {
       'line-color': 'rgba(0,0,0,1)',
-      'line-width': 1.2
+      'line-width': 2
     },
   'filter': ['==', 'target', target]
   }, 'place-town');
