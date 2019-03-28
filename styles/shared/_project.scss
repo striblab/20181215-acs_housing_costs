@@ -45,21 +45,29 @@
 
 .inset {
   text-align: center;
-  width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  width: 400px;
+  margin:1em -70px 2em 2em;
+  float: right;
 
-.inset img {
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 
-.inset .credit {
-  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 0.6em;
-  color: #888888;
-  text-align: right;
+  .credit {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #ababab;
+    text-align: right;
+    margin: .35em 0;
+  }
+
+  .tease-photo-caption {
+    font-size: .8em;
+    text-align: left;
+    line-height: 1.3em;
+  }
 }
 
 .chart {
@@ -102,9 +110,9 @@
 }
 
 .source {
-  margin-left:auto;
-  margin-right:auto;
-  width:520px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 520px;
 }
 
 .maplabel {
@@ -650,11 +658,11 @@ div .byline a {
   }
 
   #map {
-    pointer-events:none !important;
+    pointer-events: none !important;
   }
 
   .mapboxgl-ctrl-top-right {
-    display:none;
+    display: none;
   }
 
   .triptych {
