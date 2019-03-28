@@ -95,8 +95,8 @@ var map1 = new mapboxgl.Map({
   container: 'map1', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint1, 
-  zoom: 9,
-  minZoom: 9
+  zoom: 9.5,
+  minZoom: 9.5
 });
 
 //central minneapolis
@@ -106,22 +106,22 @@ var map2 = new mapboxgl.Map({
   container: 'map2', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint2, 
-  zoom: 10,
-  minZoom: 10
+  zoom: 10.1,
+  minZoom: 10.1
 });
 
 //east st. paul
-var centerpoint3 = [-92.995337, 44.953335];
+var centerpoint3 = [-93.081341, 44.950941];
 
 var map3 = new mapboxgl.Map({
   container: 'map3', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint3, 
-  zoom: 9,
-  minZoom: 9
+  zoom: 9.5,
+  minZoom: 9.5
 });
 
-function genMap(map,nav,centerpoint) {
+function genMap(map,nav,centerpoint,target) {
 
 if (nav) {
   map.addControl(new mapboxgl.NavigationControl());
@@ -183,7 +183,7 @@ map.addLayer({
   'filter': ['==', 'renter_c_1', 2]
 }, 'road-primary');
 
-
+if (nav) {
 map.addSource('mpls', {
   type: 'geojson',
   data: mpls
@@ -218,6 +218,22 @@ map.addLayer({
       'line-width': 1.2
     }
 }, 'road-primary');
+} else {
+
+  map.addLayer({
+    'id': 'metro_3',
+    'interactive': true,
+    'source': 'metro',
+    'layout': {},
+    'type': 'line',
+    'paint': {
+      'line-color': 'rgba(0,0,0,1)',
+      'line-width': 1.2
+    },
+  'filter': ['==', 'target', target]
+  }, 'road-primary');
+
+}
 
 });
 
@@ -249,7 +265,7 @@ $(document).ready(function() {
 
 }
 
-genMap(map,true,centerpoint);
-genMap(map1,false,centerpoint1);
-genMap(map2,false,centerpoint2);
-genMap(map3,false,centerpoint3);
+genMap(map,true,centerpoint,0);
+genMap(map1,false,centerpoint1,1);
+genMap(map2,false,centerpoint2,2);
+genMap(map3,false,centerpoint3,3);
