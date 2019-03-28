@@ -44,9 +44,9 @@
 }
 
 .inset {
-  text-align: center;
+  // text-align: center;
   width: 400px;
-  margin:1em -70px 2em 2em;
+  margin: 1em -70px 2em 2em;
   float: right;
 
   img {
@@ -67,6 +67,13 @@
     font-size: .8em;
     text-align: left;
     line-height: 1.3em;
+  }
+}
+
+@media (max-width:520px) {
+  .inset {
+    width: 100%;
+    margin: 1em 0 2em 0;
   }
 }
 
@@ -667,13 +674,13 @@ div .byline a {
 
   .tease-photo-caption {
     display: block;
-    font-family: "Benton Sans",Helvetica,Arial,sans-serif;
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
     color: #646464;
     font-size: .92308em;
     line-height: 14px;
     margin-bottom: 16px;
     margin-top: 16px;
-}
+  }
 
   .triptych {
     width: 100%;
