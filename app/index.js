@@ -73,6 +73,9 @@ const chart2 = new Chart2('#bars');
 chart1.render();
 chart2.render();
 
+const popover_thresh = 500; // The width of the map when tooltips turn to popovers
+const isMobile = (window.innerWidth <= popover_thresh || document.body.clientWidth) <= popover_thresh || utils.isMobile();
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LFgR3XBpCNNxWPKA';
 
 var dzoom = 8;
@@ -125,6 +128,11 @@ function genMap(map,nav,centerpoint,target) {
 
 if (nav) {
   map.addControl(new mapboxgl.NavigationControl());
+}
+
+if (utils.isMobile()) {
+  map.dragRotate.disable();
+  map.touchZoomRotate.disableRotation();
 }
 
 map.scrollZoom.disable();
