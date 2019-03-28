@@ -649,6 +649,14 @@ div .byline a {
     min-width: 100% !important;
   }
 
+  #map {
+    pointer-events:none !important;
+  }
+
+  .mapboxgl-ctrl-top-right {
+    display:none;
+  }
+
   .triptych {
     width: 100%;
     margin: 0;
