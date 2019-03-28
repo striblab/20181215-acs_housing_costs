@@ -197,7 +197,7 @@ map.addLayer({
   'type': 'line',
     'paint': {
       'line-color': 'rgba(0,0,0,1)',
-      'line-width': 1.5
+      'line-width': 1.2
     }
 }, 'road-primary');
 
@@ -215,7 +215,7 @@ map.addLayer({
   'type': 'line',
     'paint': {
       'line-color': 'rgba(0,0,0,1)',
-      'line-width': 1.5
+      'line-width': 1.2
     }
 }, 'road-primary');
 
