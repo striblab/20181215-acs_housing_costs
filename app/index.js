@@ -128,7 +128,7 @@ if (nav) {
 }
 
 map.scrollZoom.disable();
-map.doubleClickZoom.disable();
+// map.doubleClickZoom.disable();
 
 
 map.on('load', function() {
@@ -199,7 +199,7 @@ map.addLayer({
       'line-color': 'rgba(0,0,0,1)',
       'line-width': 1.2
     }
-}, 'road-primary');
+}, 'place-town');
 
 
 map.addSource('stp', {
@@ -217,7 +217,7 @@ map.addLayer({
       'line-color': 'rgba(0,0,0,1)',
       'line-width': 1.2
     }
-}, 'road-primary');
+}, 'place-town');
 } else {
 
   map.addLayer({
@@ -231,7 +231,7 @@ map.addLayer({
       'line-width': 1.2
     },
   'filter': ['==', 'target', target]
-  }, 'road-primary');
+  }, 'place-town');
 
 }
 
