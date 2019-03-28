@@ -64,6 +64,8 @@ utils.environmentNoting();
 import Chart from './chart.js';
 import Chart2 from './barchart.js';
 import burden from '../sources/burdened.json';
+import mpls from '../sources/minneapolis.json';
+import stp from '../sources/stpaul.json';
 
 const chart1 = new Chart('#chart');
 const chart2 = new Chart2('#bars');
@@ -181,7 +183,44 @@ map.addLayer({
   'filter': ['==', 'renter_c_1', 2]
 }, 'road-primary');
 
+
+map.addSource('mpls', {
+  type: 'geojson',
+  data: mpls
 });
+
+map.addLayer({
+  'id': 'mpls',
+  'interactive': true,
+  'source': 'mpls',
+  'layout': {},
+  'type': 'line',
+    'paint': {
+      'line-color': 'rgba(0,0,0,1)',
+      'line-width': 1.5
+    }
+}, 'road-primary');
+
+
+map.addSource('stp', {
+  type: 'geojson',
+  data: stp
+});
+
+map.addLayer({
+  'id': 'stp',
+  'interactive': true,
+  'source': 'stp',
+  'layout': {},
+  'type': 'line',
+    'paint': {
+      'line-color': 'rgba(0,0,0,1)',
+      'line-width': 1.5
+    }
+}, 'road-primary');
+
+});
+
 
 $(document).ready(function() {
   if ($("#wrapper").width() < 600) {
