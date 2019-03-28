@@ -23,8 +23,8 @@ class BarChart {
             padding: padding,
             data: {
                 columns: [
-                    ['2017', 0.838741516,0.818120042,0.496946133,0.201340241,0.025271725],
-                    ['2012', 0.857669542,0.760120158,0.354896754,0.11828762,0.029369059]
+                    ['2012', 0.857669542,0.760120158,0.354896754,0.11828762,0.029369059],
+                    ['2017', 0.838741516,0.818120042,0.496946133,0.201340241,0.025271725]
                 ],
                 type: 'bar',
                 labels: {
@@ -54,7 +54,7 @@ class BarChart {
                 }
             },
             color: {
-                pattern: ['#E07242','#AFA8C9']
+                pattern: ['#AFA8C9','#E07242']
             },
             axis: {
                 rotated: true,
@@ -113,7 +113,7 @@ class BarChart {
             }
         });
 
-        d3.selectAll(".c3-target-2012")
+        d3.selectAll(".c3-target-2017")
         .selectAll(".c3-bar, .c3-texts")
         .attr("transform", "translate(0, 5)");
 
