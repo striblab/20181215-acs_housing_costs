@@ -18,6 +18,10 @@
   text-decoration: none !important;
 }
 
+p {
+  -webkit-font-smoothing: antialiased;
+}
+
 .article-author-hcard {
   margin-bottom: 1em;
 }
@@ -36,16 +40,6 @@
 
 .article-author-contact p {
  margin-bottom: 0 !important;
-}
-
-.scroll__graphic {
-  height: auto !important;
-  padding-bottom: 25px;
-}
-
-#scroll {
-  display: block;
-  position: relative;
 }
 
 .topslide {

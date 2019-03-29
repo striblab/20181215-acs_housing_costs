@@ -95,8 +95,8 @@ var map1 = new mapboxgl.Map({
   container: 'map1', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint1, 
-  zoom: 9.5,
-  minZoom: 9.5
+  zoom: 9.6,
+  minZoom: 9.6
 });
 
 //central minneapolis
@@ -106,8 +106,8 @@ var map2 = new mapboxgl.Map({
   container: 'map2', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint2, 
-  zoom: 10.1,
-  minZoom: 10.1
+  zoom: 10.4,
+  minZoom: 10.4
 });
 
 //east st. paul
@@ -117,8 +117,8 @@ var map3 = new mapboxgl.Map({
   container: 'map3', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint3, 
-  zoom: 9.5,
-  minZoom: 9.5
+  zoom: 9.7,
+  minZoom: 9.7
 });
 
 function genMap(map,nav,centerpoint,target) {
@@ -236,7 +236,7 @@ map.addLayer({
       'line-color': 'rgba(0,0,0,1)',
       'line-width': 1.6
     },
-  'filter': ['==', 'target', target]
+  'filter': ['==', 'ZCTA5CE10', target]
   }, 'place-town');
 
 }
@@ -272,6 +272,6 @@ $(document).ready(function() {
 }
 
 genMap(map,true,centerpoint,0);
-genMap(map1,false,centerpoint1,1);
-genMap(map2,false,centerpoint2,2);
-genMap(map3,false,centerpoint3,3);
+genMap(map1,false,centerpoint1,"55443");
+genMap(map2,false,centerpoint2,"55454");
+genMap(map3,false,centerpoint3,"55106");

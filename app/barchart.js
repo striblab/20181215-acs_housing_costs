@@ -29,8 +29,8 @@ class BarChart {
                 type: 'bar',
                 labels: {
                     format: {
-                        '2017': d3.format('.0%'),
-                        '2012': d3.format('.0%')
+                        '2017': d3.format('.1%'),
+                        '2012': d3.format('.1%')
                     }
                 },
                 line: {
