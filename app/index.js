@@ -230,7 +230,7 @@ map.addLayer({
     'type': 'line',
     'paint': {
       'line-color': 'rgba(0,0,0,1)',
-      'line-width': 2
+      'line-width': 1.7
     },
   'filter': ['==', 'target', target]
   }, 'place-town');
