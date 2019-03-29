@@ -228,9 +228,13 @@ map.addLayer({
     'source': 'metro',
     'layout': {},
     'type': 'line',
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
     'paint': {
       'line-color': 'rgba(0,0,0,1)',
-      'line-width': 1.7
+      'line-width': 1.6
     },
   'filter': ['==', 'target', target]
   }, 'place-town');
