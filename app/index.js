@@ -100,14 +100,14 @@ var map1 = new mapboxgl.Map({
 });
 
 //central minneapolis
-var centerpoint2 = [-93.259557, 44.955509];
+var centerpoint2 = [-93.244918, 44.968511];
 
 var map2 = new mapboxgl.Map({
   container: 'map2', // container id
   style: 'mapbox://styles/shadowflare/ciqzo0bu20004bknkbrhrm6wf',
   center: centerpoint2, 
-  zoom: 10.4,
-  minZoom: 10.4
+  zoom: 10.6,
+  minZoom: 10.6
 });
 
 //east st. paul
